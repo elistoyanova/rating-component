@@ -1,0 +1,138 @@
+/* You selected <!-- Add rating here --> out of 5 */
+
+:root {
+    --clr-primary: hsl(25, 97%, 53%);
+
+    --clr-neutral-white: hsl(0, 0%, 100%);
+    --clr-neutral-grey: hsl(217, 12%, 63%);
+    --clr-dark-blue: hsl(213, 19%, 18%);
+    --clr-vdark-blue:hsl(216, 12%, 8%);
+
+    --fs-paragraph: 0.9375rem;
+
+    --ff-primary: "Overpass", sans-serif;;
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+html {
+    font-size: 16px;
+}
+
+*,*::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    color: var(--clr-neutral-white);
+    font-family: var(--ff-primary);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--clr-vdark-blue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    background: linear-gradient(var(--clr-dark-blue), var(--clr-dark-blue));
+    max-width: 25rem;
+    aspect-ratio: 1/1;
+    padding: 2rem;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.icon-star{
+    background-color: var(--clr-vdark-blue);
+    padding: 1rem;
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%; 
+}
+
+.text-box > h2 {
+    font-weight: var(--fw-regular);
+    margin-bottom: 1rem;
+}
+
+p {
+    color: var(--clr-neutral-grey);
+    font-size: var(--fs-paragraph);
+}
+
+.rating-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating-list > .rating {
+    background-color: var(--clr-vdark-blue);
+    padding: 1rem;
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    text-align: center;
+}
+
+.rating-list > span:hover {
+    cursor: pointer;
+    color: var(--clr-vdark-blue);
+    background: var(--clr-primary);
+}
+
+.submit {
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: none;
+    color: var(--clr-vdark-blue);
+    text-transform: uppercase;
+    font-weight: var(--fw-bold);
+    letter-spacing: 0.2rem;
+    transition: transform 2s ease;
+}
+
+.submit:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.thanks-message {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanks-message > p {
+    background-color: var(--clr-vdark-blue);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+.rating-list > .clicked {
+    background-color: var(--clr-neutral-white);
+    color: var(--clr-vdark-blue);
+}
+
+
+
+
+
+
+
+
+
+
